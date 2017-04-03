@@ -9,12 +9,17 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="container">
-    <div class="row"> <!--The row class should add up to 12 columns. This is an indicator that we have a group of 12 columns encapsulated within-->
-      <div class="col-md-12">
-        <h1>Blasting Off With Bootstrap</h1>
-      </div>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand">Blasting Off With Bootstrap</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="stations.html">Stations</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </div>
+  </div>
+  <div class="container">
     <div class="row well well-lg">
       <div class="col-md-6">
         <h2>The Fastest Way to Space</h2>
@@ -47,49 +52,70 @@
     </div>
   </div>
   <div class='quote'>
-      <div class='container'>
-        <blockquote>
-          <p>Any sufficiently advanced technology is indistinguishable from magic.</p>
-          <footer>Arthur C. Clarke in <cite title="Source Title">Profiles of the Future</cite></footer>
-        </blockquote>
+    <div class='container'>
+      <blockquote>
+        <p>Any sufficiently advanced technology is indistinguishable from magic.</p>
+        <footer>Arthur C. Clarke in <cite title="Source Title">Profiles of the Future</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class='container transport-systems'>
+    <div class='row'>
+      <div class='col-md-10 col-md-offset-1'>
+        <h2>Our Transport Systems</h2>
+        <p>Learn more about our transport systems to find out which one is right for you. Pick out the mode of transport that works for your budget and risk level.</p>
       </div>
     </div>
-
-    <div class='container transport-systems'>
+    <div class='row text-center'>
+      <div class='transporter col-md-3 col-md-offset-1 well'>
+        <h3>Transporter</h3>
+        <ul class="list-unstyled">
+          <li>8 second travel time</li>
+          <li>Chance of death only 1 in 7,593</li>
+          <li>Low price of only $15.99!</li>
+        </ul>
+        <p><button class="btn btn-info"><i class='glyphicon glyphicon-transfer'></i> Beam Me Up!</button></p>
+      </div>
+      <div class='space-elevator col-md-3 col-md-offset-1 well'>
+        <h3>Space Elevator</h3>
+        <ul class="list-unstyled">
+          <li>8 hour scenic ride</li>
+          <li>Only 1 horrific death per 12,456</li>
+          <li>Only $45.99 if you book today!</li>
+        </ul>
+        <p><button class="btn btn-info"><i class='glyphicon glyphicon-sort'></i> Board the Elevator!</button></p>
+      </div>
+      <div class='rocketbus col-md-3 col-md-offset-1 well'>
+        <h3>RocketBus</h3>
+        <ul class="list-unstyled">
+          <li>8 minute scenic ride</li>
+          <li>Plunging death rate of under 1/100k</li>
+          <li>$74.99 lets you blast off today!</li>
+        </ul>
+        <p><button class="btn btn-info"><i class='glyphicon glyphicon-plane'></i> Blast Off!</button></p>
+      </div>
+    </div>
+  </div>
+  <div class='container'>
       <div class='row'>
         <div class='col-md-10 col-md-offset-1'>
-          <h2>Our Transport Systems</h2>
-          <p>Learn more about our transport systems to find out which one is right for you. Pick out the mode of transport that works for your budget and risk level.</p>
-        </div>
-      </div>
-
-      <div class='row text-center'>
-        <div class='transporter col-md-3 col-md-offset-1 well'>
-          <h3>Transporter</h3>
-          <ul class="list-unstyled">
-            <li>8 second travel time</li>
-            <li>Chance of death only 1 in 7,593</li>
-            <li>Low price of only $15.99!</li>
+          <h2>Plan Your Trip Today!</h2>
+          <ul class='nav nav-tabs'>
+            <li class='active'><a href='#time'>Today's Times</a></li>
+            <li><a href='#deals'>Hot Deals</a></li>
+            <li><a href='#forecast'>Forecast</a></li>
           </ul>
-          <p><button class="btn btn-info"><i class='glyphicon glyphicon-transfer'></i> Beam Me Up!</button></p>
-        </div>
-        <div class='space-elevator col-md-3 col-md-offset-1 well'>
-          <h3>Space Elevator</h3>
-          <ul class="list-unstyled">
-            <li>8 hour scenic ride</li>
-            <li>Only 1 horrific death per 12,456</li>
-            <li>Only $45.99 if you book today!</li>
-          </ul>
-          <p><button class="btn btn-info"><i class='glyphicon glyphicon-sort'></i> Board the Elevator!</button></p>
-        </div>
-        <div class='rocketbus col-md-3 col-md-offset-1 well'>
-          <h3>RocketBus</h3>
-          <ul class="list-unstyled">
-            <li>8 minute scenic ride</li>
-            <li>Plunging death rate of under 1/100k</li>
-            <li>$74.99 lets you blast off today!</li>
-          </ul>
-          <p><button class="btn btn-info"><i class='glyphicon glyphicon-plane'></i> Blast Off!</button></p>
+          <div class='tab-content'>
+            <div class='tab-pane fade active' id='time'>
+              <p>Today's Time here</p>
+            </div>
+            <div class='tab-pane fade' id='deals'>
+              <p>Deals here</p>
+            </div>
+            <div class='tab-pane fade' id='forecast'>
+              <p>Forecast</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
